@@ -2,10 +2,10 @@ import React, { Component ,createElement} from 'react';
 import PropTypes from 'prop-types';
 import { Layout, Menu, Icon, Input, Row,
      Col, Avatar, Dropdown,AutoComplete,Button  } from 'antd';
-// import LOGO from '../../images/T-3.png';
+import LOGO from '../../images/T-3.png';
 // import LOGO from '../../images/_TOP-STAR-LOGO.png';
 // import LOGO from '../../images/_TOP-STAR-LOGO_01.jpg';
-import LOGO from '../../images/_TOP-STAR-LOGO_02.jpg';
+// import LOGO from '../../images/_TOP-STAR-LOGO_02.jpg';
 import styles from './THeader.less';
 import HeaderSearch from '../../components/ant-design-pro/HeaderSearch';
 const Option = AutoComplete.Option;
@@ -178,16 +178,21 @@ export default class THeader extends React.Component {
             <Header className="header">
               {/* <div className="logo" /> */}
               <Row gutter={16}>
-                  <Col span={3}>
+                  <Col span={0}>
                       <div className="header-title">
                             {/* <span>T-MES智能制造执行系统</span> */}
-                            <img src={LOGO} style={{width:'100%',maxWidth:150}}/>
+                            <img src={LOGO}
+                              style={{
+                                width:'100%',
+                                // maxWidth:150
+                              }}
+                            />
                       </div>
                   </Col>
-                  <Col span={6}>
+                  <Col span={9}>
                       <div className="header-title">
-                            <span>智能制造执行系统</span>
-                            {/* <img src={LOGO} style={{width:'100%',maxWidth:150}}/> */}
+                            {/* <span>智能制造执行系统</span> */}
+                            <img src={LOGO} style={{width:'100%',maxWidth:350}}/>
                       </div>
                   </Col>
                   <Col span={9}>

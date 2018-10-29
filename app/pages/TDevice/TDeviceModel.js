@@ -374,7 +374,8 @@ export default class DeviceList extends Component {
             title: '物料类别',
         }];
         return (
-            <PageHeaderLayout title="设备型号" wrapperClassName="pageContent" BreadcrumbList={bcList}>
+            <PageHeaderLayout title="设备型号" wrapperClassName="pageContent"
+               BreadcrumbList={Breadcrumb.BCList}>
                 <div className="cardContent">
                     <SimpleQForm
                         FormItem={RFormItem}

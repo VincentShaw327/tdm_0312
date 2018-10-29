@@ -297,7 +297,7 @@ export default class App extends Component {
 
 
         return (
-            <PageHeaderLayout title="损失时间报表" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
+            <PageHeaderLayout title="车间状态" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
                 <div className="cardContent">
                     <Card>
                         <Row gutter={16}>

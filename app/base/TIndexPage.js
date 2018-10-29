@@ -501,10 +501,10 @@ export default class TIndexPage extends React.Component {
                                     <Menu.Item key="TWorkCenterCategory">工作中心类型</Menu.Item>
                               </SubMenu> */}
 
-                              <Menu.Item key="TAboutSupport">
+                              {/* <Menu.Item key="TAboutSupport">
                                 <Icon type="tec-support" />
                                 <span className="nav-text">技术支持</span>
-                              </Menu.Item>
+                              </Menu.Item> */}
                               {/* <Menu.Item key="TDemo">
                                 <Icon type="appstore" />
                                 <span className="nav-text">组件DEMO</span>

@@ -1,11 +1,12 @@
 // @import "~antd/dist/antd.less";   // 引入官方提供的 less 样式入口文件
 // @import "~antd/dist/antd.css";   // 引入官方提供的 less 样式入口文件
-@import  "./test/iconfont.css";
-// @import  url("./test/iconfont.css");
+// @import  "/test/iconfont.css";
+// @import  url("./iconfont/iconfont.css");
 // @import "your-theme-file.less";   // 用于覆盖上面定义的变量
 // @import "./custom.less";   // 用于覆盖上面定义的变量
-// @icon-url: `"/iconfont/iconfont"`; // 把 iconfont 地址改到本地
+// @icon-url: `"./iconfont/iconfont"`; // 把 iconfont 地址改到本地
 
+@import  "./iconfont/iconfont.css";
 :global(.anticon) {  /* :global() 是为了覆盖全局class .anticon 的样式 */
   &:before {
     /* 优先调用 anticon-user 字体，就是上面图例创建的 anticon-custom，名字对上就行，我自己的程序叫 anticon-user 了 */

@@ -96,7 +96,7 @@ export const UserGroup = handleActions({
                     Mobile:'13800001111',
                     Phone:'0755-23455432',
                     Number:'process_'+index,
-                    ID:'moldmodel_'+index,
+                    ID:'authGroup_'+index,
                     'TypeName|1':['自动组装车间','注塑车间','冲压车间'], //类别名称
                     Desc:'-',
                     Note:'-',

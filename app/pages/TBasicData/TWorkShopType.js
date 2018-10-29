@@ -171,7 +171,7 @@ export default class App extends Component {
                 type: 'string'
             },
             {
-                title: '工厂类型',
+                title: '车间类型',
                 dataIndex: 'Name',
                 type: 'string',
                 // sorter: (a, b) => a.Name.length - b.Name.length

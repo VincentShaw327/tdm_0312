@@ -401,7 +401,7 @@ export default class DeviceList extends Component {
         }];
 
         return (
-          <PageHeaderLayout title="设备列表" wrapperClassName="pageContent" BreadcrumbList={bcList}>
+          <PageHeaderLayout title="设备列表" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
               <div className="cardContent">
                   {/* <Feature/> */}
                   <StandardQForm

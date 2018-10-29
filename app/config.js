@@ -3,41 +3,12 @@ export default (() => {
   +(function (global) {
     // 本地开发打开的路径以及端口
     global.linkUrl = 'http://localhost:3001';
+    global.iconUrl = 'images/assets/';
     if (process.env.NODE_ENV === 'production') { // 生产环境用不同的接口地址
       global.linkUrl = 'http://localhost:3000';
     }
     global.isDemo_dev=true;
     // 系统一二级菜单
-    /*global.nav = [
-      {
-        id: 600110230,
-        name: '功能列表',
-        icon: 'book',
-        url: '',
-        children: [
-          {
-            id: 600110232, name: '表格', url: 'table', icon: 'user',
-          },
-          {
-            id: 600110233, name: '图表', url: 'echarts', icon: 'area-chart',
-          },
-          {
-            id: 600110234, name: '编辑器', url: 'editor', icon: 'area-chart',
-          },
-        ],
-      },
-      {
-        id: 600110430,
-        name: '其他',
-        icon: 'calculator',
-        url: '',
-        children: [
-          {
-            id: 600110431, name: '聊天室', url: 'chat', icon: 'book',
-          },
-        ],
-      },
-    ];*/
     global.nav = [
       {
         name: '系统主页',
@@ -47,7 +18,8 @@ export default (() => {
       },
       {
         name: '组织架构',
-        icon: 'org-structure',
+        // icon: 'org-structure',
+        icon: 'sliders',
         url: '',
         key: 'TOrg_Structure',
         children: [
@@ -61,7 +33,8 @@ export default (() => {
       },
       {
         name: '基础数据',
-        icon: 'basic-data',
+        // icon: 'basic-data',
+        icon: 'dot-chart',
         url: '',
         key: 'TBasic_Data',
         children: [
@@ -104,7 +77,8 @@ export default (() => {
       },
       {
         name: '生产管理',
-        icon: 'pro-mg',
+        // icon: 'pro-mg',
+        icon: 'notification',
         url: '',
         key: 'TManufacture',
         children: [
@@ -192,7 +166,8 @@ export default (() => {
       },*/
       {
         name: '工艺管理',
-        icon: 'quality-assurance',
+        // icon: 'quality-assurance',
+        icon: 'share-alt',
         url: '',
         key: 'TProcessManagement',
         children: [
@@ -202,7 +177,7 @@ export default (() => {
           {
             name:'工艺管理', key: 'crafts',url:'TPM_Procedure',
           },
-          {
+          /*{
             name:'工艺路线管理', key: 'TPM_Route',url:'TPM_Route',
           },
           {
@@ -219,12 +194,13 @@ export default (() => {
                 },
 
             ]
-          },
+          },*/
         ],
       },
       {
         name: '设备管理',
-        icon: 'device-mg',
+        // icon: 'device-mg',
+        icon: 'tablet',
         url: '',
         key: 'TDevice',
         children: [
@@ -235,9 +211,9 @@ export default (() => {
             name:'设备型号', key: 'TDeviceModel',url:'TDeviceModel',
           },
           {
-            name:'设备台账', key: 'TDeviceList',url:'TDeviceList',
+            name:'设备列表', key: 'TDeviceList',url:'TDeviceList',
           },
-          {
+          /*{
             name:'设备维保', key: 'TDev_Maintain',url:'',
             children:[
                 {
@@ -254,6 +230,21 @@ export default (() => {
                 },
 
             ]
+          },*/
+        ],
+      },
+      {
+        name: '模具管理',
+        // icon: 'mould-mg',
+        icon: 'inbox',
+        url: '',
+        key: 'TMould',
+        children: [
+          {
+            name:'模具型号', key: 'mould_model',url:'mould_model',
+          },
+          {
+            name:'模具列表', key: 'mould_list',url:'mould_list',
           },
         ],
       },
@@ -274,20 +265,6 @@ export default (() => {
           },
           {
             name:'OEE报表', key: 'oee_analysis_report',url:'oee_analysis_report',
-          },
-        ],
-      },
-      {
-        name: '模具管理',
-        icon: 'mould-mg',
-        url: '',
-        key: 'TMould',
-        children: [
-          {
-            name:'模具型号', key: 'mould_model',url:'mould_model',
-          },
-          {
-            name:'模具列表', key: 'mould_list',url:'mould_list',
           },
         ],
       },

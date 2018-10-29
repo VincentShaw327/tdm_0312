@@ -13,7 +13,7 @@ import SimpleTable from 'components/TTable/SimpleTable';
 import { CreateModal,UpdateModal } from 'components/TModal';
 import {SimpleQForm,StandardQForm } from 'components/TForm';
 import PageHeaderLayout from '../../base/PageHeaderLayout';
-
+import Pic from 'images/assets/mold01.jpg'
 
 @connect( ( state, props ) => {
     console.log( 'state', state )
@@ -200,13 +200,19 @@ export default class MouldModel extends Component {
               render:(e,record)=>{
                   const content = (
                       <div>
-                        <img width="300"  src={urlBase+e}/>
+                        <img width="300"
+                          // src={urlBase+e}
+                          src={Pic}
+                        />
                       </div>
                     );
                   return (
                       <Popover placement="right"  content={content} trigger="hover">
                         {/* <Button>Right</Button> */}
-                        <img height='50' src={urlBase+e}/>
+                        <img height='50'
+                           // src={urlBase+e}
+                           src={Pic}
+                         />
                       </Popover>
                     )
               }
@@ -346,7 +352,7 @@ export default class MouldModel extends Component {
         }];
 
         return (
-            <PageHeaderLayout title="模具型号" wrapperClassName="pageContent" BreadcrumbList={bcList}>
+            <PageHeaderLayout title="模具型号" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
                 <div className="cardContent">
                     {/* <Feature /> */}
                     {/* <SimpleQForm

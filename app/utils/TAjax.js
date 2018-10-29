@@ -5,7 +5,8 @@ import {ENOPROTOOPT, EOPNOTSUPP} from 'constants';
 
 // let urlBase = 'http://localhost:8888';
 // export let urlBase = 'http://localhost:9000';
-export let urlBase = 'http://localhost:1111';
+// export let urlBase = 'http://localhost:1111';
+export let urlBase = gconfig.linkUrl;
 export let mockUrlBase = 'http://localhost:1111';
 
 // export  let urlBase = 'http://192.168.200.5';

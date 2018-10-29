@@ -195,7 +195,7 @@ export default class TStateTimeOverview extends Component {
         })();
 
         return (
-            <PageHeaderLayout title="损失时间报表" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
+            <PageHeaderLayout title="生产追踪" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
                 <div className="cardContent">
                     <Card>
                         <Row gutter={16}>

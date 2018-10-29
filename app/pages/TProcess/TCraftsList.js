@@ -304,7 +304,7 @@ export default class TDeviceType extends Component {
         }];
 
         return (
-            <PageHeaderLayout title="工藝列表" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
+            <PageHeaderLayout title="工艺管理" wrapperClassName="pageContent" BreadcrumbList={Breadcrumb.BCList}>
                 <div className="cardContent">
                     {/* <SimpleQForm
                         FormItem={RFormItem}

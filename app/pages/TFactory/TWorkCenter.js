@@ -286,14 +286,20 @@ export default class TWorkCenter extends Component {
                     // console.log('图片地址',e);
                     const content = (
                         <div>
-                          <img width="300"  src={urlBase+e} alt="这是工作中心图片"/>
+                          <img width="300"
+                            // src={urlBase+e}
+                            src={auto01}
+                            alt="这是工作中心图片"/>
                         </div>
                     );
                     return (
                         <Popover placement="right"  content={content} trigger="hover">
                           {/* <Button>Right</Button> */}
                           {/* <img height='30' src={auto01}/> */}
-                          <img height='50' src={urlBase+e}/>
+                          <img height='50'
+                            // src={urlBase+e}
+                            src={auto01}
+                          />
                         </Popover>
                     )
                 }

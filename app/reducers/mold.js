@@ -31,13 +31,15 @@ export const moldList = handleActions({
             list=res.objectlist.map((item,index)=>{
                 return{
                     UUID:item.UUID,
-                    index:index,
+                    key:index,
                     Name:Mock.mock('@cname'),
 
                     Number:'process_'+index,
-                    'MoldModelName|1':['RCA3.0','RCA6.0','HDMI','USB'],
+                    MoldModelName:'模具'+index,
+                    ModelName:'模具'+index,
                     'ModelUUID|1':['RCA3.0','RCA6.0','HDMI','USB'],
-                    ID:'moldmodel_'+index,
+                    Number:'moldmodel_'+index,
+                    MoldModelID:'moldmodel_'+index,
                     Label:Mock.mock('@string'),
                     ModelSize:Mock.mock('@natural(0, 24)'),
                     MoldModelSize:Mock.mock('@natural(0, 24)'),
@@ -92,11 +94,13 @@ export const moldModel = handleActions({
                     Name:Mock.mock('@cname'),
 
                     Number:'process_'+index,
-                    'MoldModelName|1':['RCA3.0','RCA6.0','HDMI','USB'],
+                    MoldModelName:'模具'+index,
+                    'ModelUUID|1':['RCA3.0','RCA6.0','HDMI','USB'],
+                    MoldModelID:'moldmodel_'+index,
                     ID:'moldmodel_'+index,
                     MoldModelSize:Mock.mock('@natural(0, 24)'),
                     Cavity:Mock.mock('@natural(0, 24)'),
-                    'TypeName|1':['自动组装车间','注塑车间','冲压车间'], //类别名称
+                    'TypeName|1':['注塑模具','冲压模具'], //类别名称
                     'isQCheck|1':['是','否'],
                     Hours:Mock.mock('@natural(0, 24)'),
                     Desc:'-',

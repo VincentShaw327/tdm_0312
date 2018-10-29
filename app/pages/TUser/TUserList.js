@@ -15,6 +15,7 @@ import { CreateModal,UpdateModal } from 'components/TModal';
 import {SimpleQForm,StandardQForm } from 'components/TForm';
 import TUserDetails from './TUserDetails';
 import PageHeaderLayout from '../../base/PageHeaderLayout';
+import pic from 'images/user01.jpg'
 
 @connect( ( state, props ) => {
     console.log( 'state', state )
@@ -236,13 +237,20 @@ export default class TUserList extends Component {
                     // console.log('图片地址',e);
                     const content = (
                         <div>
-                          <img width="300"  src={urlBase+e}/>
+                          <img width="300"
+                            // src={urlBase+e}
+                            src={pic}
+                          />
                         </div>
                     );
                     return (
                         <Popover placement="right"  content={content} trigger="hover">
                           {/* <Button>Right</Button> */}
-                          <img height='50' src={urlBase+e}/>
+                          <img
+                            height='50'
+                            // src={urlBase+e}
+                            src={pic}
+                          />
                         </Popover>
                     )
                 }
@@ -445,10 +453,10 @@ export default class TUserList extends Component {
           title:"首页",
           href: '/',
           }, {
-          title: '车间管理',
+          title: '系统设置',
           href: '/',
           }, {
-          title: '工作中心',
+          title: '用户列表',
           }];
 
         const HeadAction=(
